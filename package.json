@@ -8,12 +8,26 @@
   },
   "main": "index.js",
   "scripts": {
+    "check-all": "run-p check-all:*",
+    "check-all:root": "run-s fix lint",
+    "check-all:terraform": "yarn workspace terraform check-all",
+    "check-code": "run-p check-code:*",
+    "check-code:root": "run-s fix lint",
+    "check-code:terraform": "yarn workspace terraform lint",
+    "deploy": "run-s deploy:*",
+    "deploy:service-strapi": "sh ./scripts/deploy.sh service-strapi",
+    "dev": "run-p dev:*",
+    "dev:service-strapi": "yarn workspace service-strapi dev",
+    "fix": "run-p fix:* -c",
     "fix:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --write",
     "fix:pack": "fixpack",
+    "lint": "run-p lint:* -c",
     "lint:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --check",
     "lint:editorconfig": "editorconfig-checker",
     "lint:pack": "fixpack --dryRun",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "run-p test:*",
+    "test:terraform": "yarn workspace terraform test"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
