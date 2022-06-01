@@ -1,0 +1,11 @@
+{
+  "name": "project-my-homepage-strapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "akky-xxxx <114.s.aki@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
