@@ -8,7 +8,10 @@
   },
   "main": "index.js",
   "scripts": {
+    "fix:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --write",
     "fix:pack": "fixpack",
+    "lint:config": "prettier \"./*.{js,json}\" \"./**/*.{js,json}\" --check",
+    "lint:editorconfig": "editorconfig-checker",
     "lint:pack": "fixpack --dryRun",
     "prepare": "husky install"
   },
