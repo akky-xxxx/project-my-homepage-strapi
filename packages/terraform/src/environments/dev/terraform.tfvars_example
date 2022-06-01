@@ -1,0 +1,24 @@
+project = {
+  credentials : ""
+  project_id : ""
+}
+
+run_strapi = {
+  name : ""
+  registry : ""
+  app_keys : ""
+  jwt_secret : ""
+  api_token_salt : ""
+  admin_jwt_secret : ""
+}
+
+storage_strapi = {
+  name : ""
+}
+
+db_strapi = {
+  version : ""
+  name : ""
+  user : ""
+  pass : ""
+}
