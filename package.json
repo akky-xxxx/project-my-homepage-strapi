@@ -8,6 +8,9 @@
     "npm": "⚠️️  【yarn】 を使ってください。(((ꎤ’ω’)و三 ꎤ’ω’)-o≡【npm】",
     "yarn": "1.22.18"
   },
+  "scripts": {
+    "prepare": "husky install"
+  },
   "license": "MIT",
   "private": true,
   "workspaces": [
