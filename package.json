@@ -9,6 +9,8 @@
     "yarn": "1.22.18"
   },
   "scripts": {
+    "fix:pack": "fixpack",
+    "lint:pack": "fixpack --dryRun",
     "prepare": "husky install"
   },
   "license": "MIT",
