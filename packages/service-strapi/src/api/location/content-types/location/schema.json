@@ -17,9 +17,8 @@
       "required": true,
       "unique": true
     },
-    "locationId": {
-      "type": "uid",
-      "required": true
+    "order": {
+      "type": "biginteger"
     },
     "photos": {
       "type": "relation",
